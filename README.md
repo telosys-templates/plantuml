@@ -1,4 +1,4 @@
-# plantuml
+# PlantUML diagram
 
 This bunldle aims to generate PlantUML diagram files ( https://plantuml.com/ ).
 
