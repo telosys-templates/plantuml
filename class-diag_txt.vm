@@ -45,7 +45,7 @@ end note
 
 ## --- Classes (based on model entities)
 #foreach( $entity in $selectedEntities )
-class $entity.name  #if ( $entity.isJoinEntity() ) << Join Entity >> #end {
+class $entity.name  #if ( $entity.isJoinEntity() ) << (J,AliceBlue) Join Entity >> #else << (E,cornsilk) >> #end {
 #foreach( $attribute in $entity.keyAttributes )
   + $attribute.name : $attribute.neutralType {PK} #if ($attribute.isFK() ){FK}#end
 
